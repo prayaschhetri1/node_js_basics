@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background: white;
+      }
+      
+      .prod_card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        width: 30vw;
+        margin: auto;
+        margin-top: 2vh;
+        padding: 2vh 0vw;
+
+        
+      }
+      .inner-cont{
+        padding: 2vh 2vw;
+
+      }
+      a {
+        text-decoration: none;
+      }
+      .prod_card {
+        overflow: hidden;
+      }
+      .img-cont{
+        width: 100%;
+        overflow: hidden;
+        margin-top: 3vh;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        transition: all 0.3s;
+      }
+      img:hover {
+        transform: scale(1.3);
+      }
+      .bck-btn{
+        padding: 1vh 1vw;
+        text-align: center;
+        font-size: 26px;
+        width: fit-content;
+        color: white;
+        background-color: black;
+        border-radius: 4px 0px 4px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <figure class="prod_card">
+      <a class="bck-btn" href="/overview">back</a>
+      <div class="inner-cont">
+      <div class="img-cont">
+        <img src="{%IMAGE%}" alt="" />
+      </div>
+      <p>{%PRODOCTNAME%}</p>
+      <p>{%PRICE%}</p>
+      <p>{%DESCRIPTION%}</p>
+      <p>{%RATING%}</p>
+    </div>
+    </figure>
+  </body>
+</html>
